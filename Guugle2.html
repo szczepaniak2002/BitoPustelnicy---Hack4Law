@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wyszukiwarka Gougle</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        #logo {
+            width: 150px;
+            margin-top: 100px;
+        }
+        #search-box {
+            margin: 20px 0;
+        }
+        #search-box input[type="text"] {
+            width: 400px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        #search-box input[type="submit"] {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4285f4;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        #search-box input[type="submit"]:hover {
+            background-color: #357ae8;
+        }
+    </style>
+</head>
+<body>
+    <img id="logo" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_light_color_92x30dp.png" alt="Google Logo">
+    <div id="search-box">
+        <input type="text" name="q" id="query" placeholder="Wyszukaj w Guogle">
+        <button id="search">Szukaj</button>
+    </div>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
