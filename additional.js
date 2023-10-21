@@ -16,9 +16,6 @@ function addMessage(message, isUserMessage = false) {
         "Polska mistrzem Polski - podsumowanie wyników polskiej kadry w piłce nożnej.",
         "Efektowne wykorzystanie html i JavaScript, poradnik młodego programisty."
     ];
-    while (document.getElementById('kontener').firstChild) {
-        document.getElementById('kontener').removeChild(document.getElementById('kontener').firstChild);
-    }
     
     const messagesDiv = document.createElement('div');
     messagesDiv.id = 'messages';
@@ -78,7 +75,9 @@ function get_messages() {
             var new_liczba_message = data.data.length;
             if(new_liczba_message != liczba_message) {
                 liczba_message = new_liczba_message
-
+                while (document.getElementById('kontener').firstChild) {
+                    document.getElementById('kontener').removeChild(document.getElementById('kontener').firstChild);
+                }
                 for(i=0; i<data.data.length; i++) {
                     if(data.data[i].from_user_id == '2') {
                         addMessage(data.data[i].text1, true)
