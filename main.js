@@ -1,10 +1,20 @@
-$("#search").click(function () {
-    console.log(('#query').text)
-    if($('#query').val() == 'prawniczka123') {
-        window.location.href = 'https://usosweb.usos.pw.edu.pl/kontroler.php?_action=news/default';
+$("#lupka").click(function () {
+    if($('#query').val() == 'haslo123') {
+        window.location.href = 'SurfSeekOfiaraChat.html';
     } else {
         window.location.href = 'https://www.google.com/search?q=' + $('#query').val();
     }
 })
 
-
+$(document).ready(function() {
+    $("#search-box").keypress(function(event){
+        if (event.which === 13) {
+            console.log('hejka')
+            if($('#query').val() == 'haslo123') {
+                window.location.href = 'SurfSeekOfiaraChat.html';
+            } else {
+                window.location.href = 'https://www.google.com/search?q=' + $('#query').val();
+            }
+          }
+    })
+});
