@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F0D6AB; 
+}
+
+.content {
+    display: flex;
+    flex-direction: flex-end;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100vh;
+    background-color: #F0D6AB;
+}
+
+.page-title {
+    font-size: 36px; 
+    color: #007bff;
+    margin: 10px;
+    font-family: Arial, sans-serif;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.page-title:hover {
+    color: #ff0000; 
+}
+
+
+
+
+.chat {
+    background-color: #fff;
+    width: 80%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    align-self: flex-end;
+
+}
+
+.chat-messages {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 300px; /* Ustal wysokość kontenera na swoje potrzeby */
+    overflow-y: scroll;
+}
+
+.message {
+    background: #007bff;
+    color: white;
+    max-width: 70%;
+    padding: 10px;
+    border-radius: 10px;
+    align-self: flex-start;
+}
+
+.user-message {
+    background: #f0f0f0;
+    color: #333;
+    align-self: flex-end;
+}
+
+input[type="text"] {
+    height: 40px;
+    width: 91%;
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    border: 3px solid #ccc;
+
+}
+button {
+    padding: 10px 20px;
+    background: linear-gradient(to bottom, #007bff, #0056b3); 
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+    position: relative;
+    overflow: hidden;
+}
+
+button::after {
+    content: "\2192"; 
+    font-size: 20px;
+    display: block;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #0056b3, #003a73); 
+}
+
+button:hover::after {
+    transform: translateX(8px);
+}
+
+/* Stylizacja dymków z wiadomościami */
+
+
