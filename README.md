@@ -19,5 +19,17 @@
   Było to dla nas niezwykłe wyzwanie, które z pewnością zostanie na długo w naszej pamięci. 
 
   ## Wybór modułu
-  Społeczeństwo rozwija się, a wraz z nim rozwija się przepływ informacji. Jednak istnieje pewna bariera - ludziom nie jest łatwo wyjść przed szereg i powiedzieć o temacie niewygodnym. Mimo, że działania te,często są oparte na poczuciu sprawiedliwości, to zazwyczaj kończą się krytyką. Nawet jeśli ktoś postawi się oszustwom i bezprawiu, to może czekać go za to kara przełożonych, dla których pewne niedociągnięcia mogły być na rękę. Chcieliśmy więc przyczynić się do chociaż najmniejszej zmiany. I tak o to postawiliśmy na moduł nr 2 - "Zasygnalizuj mi". Szczerze pragniemy, aby w kraju, gdzie panuje wolność słowa, nikt nie bał się zawalczyć o to co słuszne dla siebie czy dla ogółu społeczeństwa. Dlatego postanowiliśmy rozszerzyć ten moduł. Dedykowany on jest zarówno Sygnalistom w organizacjach, jak i zwykłym ludziom, którzy mogli znaleźc się w sytuacji, gdzie potrzebna może być pomoc prawna, czy psychologiczna. 
+  Społeczeństwo rozwija się, a wraz z nim rozwija się przepływ informacji. Jednak istnieje pewna bariera - ludziom nie jest łatwo wyjść przed szereg i powiedzieć o temacie niewygodnym. Mimo, że działania te,często są oparte na poczuciu sprawiedliwości, to zazwyczaj kończą się krytyką. Nawet jeśli ktoś postawi się oszustwom i bezprawiu, to może czekać go za to kara przełożonych, dla których pewne niedociągnięcia mogły być na rękę. Chcieliśmy więc przyczynić się do chociaż najmniejszej zmiany. I tak o to postawiliśmy na moduł nr 2 - "Zasygnalizuj mi". Szczerze pragniemy, aby w kraju, gdzie panuje wolność słowa, nikt nie bał się zawalczyć o to co słuszne dla siebie czy dla ogółu społeczeństwa. Dlatego postanowiliśmy rozszerzyć ten moduł. Moduł, w którym kluczowym elementem jest anonimowość. Dedykowany on jest zarówno Sygnalistom w organizacjach, jak i zwykłym ludziom, którzy mogli znaleźc się w sytuacji, gdzie potrzebna może być pomoc prawna, czy psychologiczna.
+
+  ## Nasz projekt
+  Chcieliśmy więc przedstawić aplikację mającą na celu anonimowe zgłaszanie nieprawidłowości oraz zwracanie się o pomoc. Oto **SurfSeek**:
+      <img src="https://github.com/szczepaniak2002/BitoPustelnicy---Hack4Law/assets/101816148/a249df2b-5ffb-4fe9-b98b-37eb1452567b" alt="Opis obrazka">
+
+  Na pierwszy rzut oka aplikacja ta wygląda jak jedna z wielu dostępnych przeglądarek interenetowych. Podobieństwo to nie jest przypadkowe, a zamierzone. Jest ono ważnym elementem naszej anonimowości... W jaki sposób? Już śpieszymy z wytłumaczeniem. Wiele osób podlega kontroli-chociażby przez przełożonych. W innej sytuacji, może to być ktoś znajdujący się w niebezpieczenśtwie. Niech ekstremalnym przypadkiem, będzie kobieta, która pada ofiarą przemocy domowej. Powłoka naszej aplikacji, imituje przeglądarkę internetową. Daje to możliwość zareagowania przy zmniejszonym ryzyku, że ktoś to zauważy. 
+
+  Jak to dokładniej działa? SurfSeek jest anonimowym czatem, gdzie po jednej stronie znajdują się użytkownicy, a po drugiej stronie czatu ktoś wykwalifikowany w zależności od kwestii w jakich używany był czat. Osoba, która odbiera nasze zgłoszenie nie ma dostępu do naszych danych osobowych. Jesteśmy więc anonimowi. Aby dostać się do czatu naszej aplikacji, w wyszukiwarkę musi zostać wpisana odpowiednia fraza - "hasło".  Tylko ono aktywuje nasze okienko komunikacji. W innym przypadku zostaniemy przeniesieni na googlowską stronę wyszukiwanego zdania. W czacie, możemy poprosić wykwalifikowaną osobę o pomoc czy radę. Gdyby ktoś się uparł mógłby postrzegać to jako bardziej funkcyjny telefon zaufania. 
+
+
+
+
   
