@@ -1,3 +1,5 @@
+var liczba_message = 0;
+
 // Pobieramy elementy z DOM
 const chatMessages = document.getElementById('chat-messages');
 const messageInput = document.getElementById('message-input');
@@ -56,7 +58,14 @@ chatSelectorButtons.forEach(button => {
         chatSelectorButtons.forEach(b => b.classList.remove('active'));
 
         currentUser = button.getAttribute('data-user');
-        // chatMessages.innerHTML = ''; // Wyczyść poprzednie wiadomości
+        chatMessages.innerHTML = ''; // Wyczyść poprzednie wiadomości
+        if(currentUser == 'user1') {
+            liczba_message = 0;
+            get_messages()
+        } else {
+            addMessage('Dzień dobry. Potrzebuję pomocy', false);
+            addMessage('Już pomagam', true);
+        }
 
         // Dodaj klasę "active" do aktywnego przycisku
         button.classList.add('active');
@@ -108,8 +117,6 @@ messageInput.addEventListener('keyup', (event) => {
         sendButton.click();
     }
 });
-
-var liczba_message = 0;
 
 function get_messages() {
     $.ajax({
