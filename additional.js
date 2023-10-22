@@ -16,6 +16,16 @@ function addMessage(message, isUserMessage = false) {
         "Polska mistrzem Polski - podsumowanie wyników polskiej kadry w piłce nożnej.",
         "Efektowne wykorzystanie html i JavaScript, poradnik młodego programisty."
     ];
+    var links = [
+        "https://example.com/Hack4law",
+        "https://example.com/Wiosenne-kwiaty-i-rosliny",
+        "https://example.com/Sloneczna-pogoda-prognozowana-juz-tej-jesieni",
+        "https://example.com/Toyota-Hilux-mistrz-off-roadu",
+        "https://example.com/Politechnika-Warszawska-rekrutacja",
+        "https://example.com/Analiza-orzeczenia-sadowego-na-czym-to-polega",
+        "https://example.com/Polska-mistrzem-Polski-podsumowanie-wynikow-polskiej-kadry-w-pilce-noznej",
+        "https://example.com/Efektowne-wykorzystanie-html-i-JavaScript-poradnik-mlodego-programisty"
+    ];
     
     const messagesDiv = document.createElement('div');
     messagesDiv.id = 'messages';
@@ -27,12 +37,13 @@ function addMessage(message, isUserMessage = false) {
 
     const messageDiv = document.createElement('div');
     messageDiv.className = 'message';
-    messageDiv.textContent = texts[getRandomNumber(0, texts.length - 1)];
+    var r = getRandomNumber(0, texts.length - 1);
+    messageDiv.textContent = texts[r];
 
-    const br1 = document.createElement('br');
-    const br2 = document.createElement('br');
-    const br3 = document.createElement('br');
-    const br4 = document.createElement('br');
+    const linkDiv = document.createElement('div');
+    linkDiv.className = 'linktext';
+    linkDiv.textContent = links[r];
+
 
     const randomTextDiv = document.createElement('div');
     randomTextDiv.id = 'randomtext';
@@ -41,17 +52,13 @@ function addMessage(message, isUserMessage = false) {
 
     messagesDiv.appendChild(imgDiv);
     messagesDiv.appendChild(messageDiv);
-    messagesDiv.appendChild(br1);
-    messagesDiv.appendChild(br2);
-    
+    messagesDiv.appendChild(linkDiv);
     messagesDiv.appendChild(randomTextDiv);
-    messagesDiv.appendChild(br3);
-    messagesDiv.appendChild(br4);
 
     
     if (isUserMessage) {
         userImg.className = 'telefon';
-        userImg.src = 'tel.jpg';
+        userImg.src = 'tel.png';
         userImg.alt = 'Ikona telefonu';
     } else {
         userImg.className = 'znak';
@@ -92,6 +99,22 @@ function get_messages() {
     }
 
 window.onload = get_messages
+
+$('#search').on('click', function(){
+    get_messages()
+})
+
+$(document).ready(function() {
+    $("#query").keypress(function(event){
+        if (event.which === 13) {
+            console.log('wowow')
+            $('#search').trigger("click")
+            get_messages()
+            $("#query").value = '';
+          }
+    })
+});
+
 setInterval(get_messages, 1000);
 
 
