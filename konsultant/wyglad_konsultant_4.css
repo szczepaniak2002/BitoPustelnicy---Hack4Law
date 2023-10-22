@@ -1,0 +1,176 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #005b96, #03396c, #6497b1);
+    background-size: 300% 300%;
+    animation: gradient 20s infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: 100vh;
+    background-color: transparent;
+}
+
+
+
+.page-title {
+    font-family: 'Palatino Linotype', Palatino, 'Book Antiqua', serif;
+    font-size: 56px;
+    color: white;
+    margin: 10px;
+    position: absolute;
+    top: 60px;
+    left: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.page-title:hover {
+    color: #ff0000;
+}
+
+
+.chat-selector {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+    margin-left: 1px; /* Dodajemy margines z lewej strony, aby przesunąć pasek w prawo */
+}
+
+.chat-selector-button {
+    padding: 40px 85px;
+    background: #4682B4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 0;
+    border-right: none;
+    margin: 0;
+    position: relative;
+    opacity: 1; /* Pełna przejrzystość dla nieaktywnych przycisków */
+}
+
+/* Styl aktywnego przycisku */
+.chat-selector-button.active {
+    background: #2E5B8E;
+    opacity: 0.99; /* Lekkie przyciemnienie dla aktywnego przycisku */
+}
+
+.chat-selector-button::after {
+    content: none;
+}
+
+.chat-selector-button:hover {
+    background: linear-gradient(to bottom, #0056b3, #003a73);
+}
+
+.chat {
+    background-color: white;
+    width: 80%; /* Ustal szerokość okna czatu na 80% szerokości ekranu */
+    margin: 0 auto; /* Centrowanie na stronie, co daje równe marginesy po lewej i prawej stronie */
+    border: 1px solid #8AA2B7;
+    padding: 10px;
+    border-radius: 5px;
+    align-self: flex-end;
+}
+
+.chat-messages {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+.message {
+    background: #007bff;
+    color: white;
+    max-width: 90%;
+    padding: 15px;
+    border-radius: 30px;
+    align-self: flex-start;
+    overflow-wrap: break-word; /* Zawijaj długie słowa */
+    width: 60ch; /* Określa szerokość w określonej liczbie znaków */
+}
+
+
+
+
+.user-message {
+    background: #2E5B8E;
+    color: white;
+    align-self: flex-end;
+}
+
+input[type="text"] {
+    height: 50px;
+    width: 75%;
+    padding: 5px;
+    margin-right: 5px;
+    border-radius: 10px;
+    border: 3px solid #ccc;
+    margin-top: 10px
+}
+
+button {
+    padding: 10px 100px;
+    background: #4682B4;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+button::after {
+    content: "\2192";
+    font-size: 10px;
+    display: block;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(to bottom, #0056b3, #003a73);
+}
+#icon {
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    width: 90px; /* Dostosuj szerokość ikonki według potrzeb */
+    height: auto; /* Utrzymuj proporcje */
+}
+
+
+#waiting-counter {
+    text-align: center;
+    font-size: 24px;
+    color: white;
+    padding: 10px 0;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(135deg, #98a6d4, #4682B4);
+}
