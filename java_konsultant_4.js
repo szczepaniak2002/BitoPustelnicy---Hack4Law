@@ -61,7 +61,6 @@ chatSelectorButtons.forEach(button => {
         chatMessages.innerHTML = ''; // Wyczyść poprzednie wiadomości
         if(currentUser == 'user1') {
             liczba_message = 0;
-            get_messages()
         } else {
             addMessage('Dzień dobry. Potrzebuję pomocy', false);
             addMessage('Już pomagam', true);
@@ -85,6 +84,7 @@ sendButton.addEventListener('click', () => {
     const messageText = messageInput.value;
     if (messageText.trim() !== '') {
         addMessage(messageText, true);
+        liczba_message++;
         messageInput.value = '';
             var updateData = {
                 text: messageText,
@@ -127,8 +127,8 @@ function get_messages() {
         encode: true,
         }).done(function (data) {
             var new_liczba_message = data.data.length;
-            if(new_liczba_message != liczba_message) {
-                liczba_message = new_liczba_message
+            if(new_liczba_message > liczba_message) {
+                liczba_message = new_liczba_message;
 
                 for(i=data.data.length - 1; i>=0; i--) {
                     if(data.data[i].from_user_id == '2') {
