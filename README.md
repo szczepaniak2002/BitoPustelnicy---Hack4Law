@@ -45,13 +45,13 @@ Jesteśmy 4 osobową grupą studentów wydziału MINI Politechniki Warszawskiej 
 Zastanawiając się nad przyszłością aplikacji, przychodzą nam na myśl pewne ulepszenia. Chociażby zmiana imitowanych przez aplikację stron. Co gdyby była ona jeszcze bardziej 'ukryta'? Wyobraźmy sobie stronę imitującą sklep online, czy jakiś biurowy edytor tekstu. Może nawet coś przypominające swoim interfacem excela itp. Może ktoś mógłby poczuć się jeszcze spokojniej, wiedząc, że nie grozi mu inwigilacja.
 
 ## Instrukcja włączenia aplikacji
-1.Pobieramy program xammp z strony https://www.apachefriends.org/pl/index.html
-2.Wchodzimy w xammp control panel i instalujemy a następnie włączamy apache i mysql
-3.Klikamy w przycisk admin w wierszu mysql
-4.Klikamy w zakładce import i importujemy bazę danych incidentdb.sql znajdującą się w tym repozytorium
-5.Otwieramy folder xammp na naszym komputerze a następnie folder htdocs
-6.Wkładamy do folderu htdocs wszystkie pliki z naszego repozytorium
-7.Po odpaleniu stron w przeglądarce powinny zadziałać
+1. Pobieramy program xammp z strony https://www.apachefriends.org/pl/index.html
+2. Wchodzimy w xammp control panel i instalujemy a następnie włączamy apache i mysql
+3. Klikamy w przycisk admin w wierszu mysql
+4. Klikamy w zakładce import i importujemy bazę danych incidentdb.sql znajdującą się w tym repozytorium
+5. Otwieramy folder xammp na naszym komputerze a następnie folder htdocs
+6. Wkładamy do folderu htdocs wszystkie pliki z naszego repozytorium
+7. Po odpaleniu stron w przeglądarce powinny zadziałać
 
 
 ## Podziękowania
