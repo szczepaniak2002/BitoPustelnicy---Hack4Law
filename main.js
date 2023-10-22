@@ -11,7 +11,7 @@ $(document).ready(function() {
         if (event.which === 13) {
             console.log('hejka')
             if($('#query').val() == 'haslo123') {
-                window.location.href = 'SurfSeekOfiaraChat.html';
+                window.location.href = 'SurfSeekChat.html';
             } else {
                 window.location.href = 'https://www.google.com/search?q=' + $('#query').val();
             }
