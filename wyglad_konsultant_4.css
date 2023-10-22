@@ -174,3 +174,15 @@ button:hover {
     right: 0;
     background: linear-gradient(135deg, #98a6d4, #4682B4);
 }
+
+@media screen and (max-width: 880px) {
+    input[type="text"] {
+        width: 55%;
+    }
+    button {
+        padding: 10px 100px;
+    }
+    .chat-selector-button {
+        padding: 20px 24px;
+    }
+  }
